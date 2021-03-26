@@ -662,6 +662,14 @@ img {
   border-color: var(--accent-color);
 }
 
+.modal-form-check-desc::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  color: #212121;
+}
+
 /* ---END MODAL WINDOW--- */
 
 .logo {
