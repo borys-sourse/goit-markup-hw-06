@@ -409,18 +409,29 @@
                     </a>
                 </li>
               </ul>
-            </div>   
+            </div>
+            <div class="footer-subscription-container">
+                <p class="titles-list titles-dark-them">Подпишитесь на рассылку</p>
+                <form class="subscription">
+                    <input type="email" name="user-mail" class="footer-form-input" required placeholder="E-mail">
+                    <button type="submit" class="subscription-btn">Подписаться
+                        <svg class="icon-send">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop" data-modal is-hidden>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-btn" width="18px" height="18px">
                     <use href="./images/icons.svg#close-black"></use>
-                </svg>
-            </button>
-            <form action="#" class="modal-form">
-                <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
+                </svg> 
+            </button> 
+            <form action="#" class="modal-form" autocomplete="off">
+              <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
               <label class="modal-form-field">
                   Имя
                   <span class="modal-form-input-wrapper">
@@ -447,24 +458,24 @@
                   <svg class="modal-form-icon">
                       <use href="./images/icons.svg#email-black"></use>
                   </svg>
-                    </span>
+                  </span>
               </label>
-              <label class="modal-form-field">
+              <label class="modal-form-field modal-comment">
                 Комментарий
-              <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
+                <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
               </label>
-              <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden">
+              <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden ">
                 <svg class="icon-check">
-                    <use href="./images#icon-check.svg"></use>
+                    <use href="./images/check.svg#check-vector"></use>
                 </svg>
-              <label for="user-term" class="modal-form-check-desc"> Соглашаюсь с рассылкой и принимаю
-                   <a href="">Условия договора</a>
+              <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp    
+                   <a href="" class="link">Условия договора</a>
               </label>
               <button type="submit" class="modal-form-btn">Отправить</button>
 
             </form>
         </div>
     </div>
-   <!--<script src="./js/modal.js"></script>-->
+ <script src="./js/modal.js"></script>
 </body>
 </html>
