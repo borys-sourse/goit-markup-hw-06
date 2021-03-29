@@ -423,7 +423,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal is-hidden>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-btn" width="18px" height="18px">
@@ -464,12 +464,13 @@
                 Комментарий
                 <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
               </label>
-              <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden ">
+              <label class="modal-form-check-desc">
+              <input type="checkbox" name="user-term" class="modal-form-term visually-hidden ">
                 <svg class="icon-check">
-                    <use href="./images/check.svg#check-vector"></use>
+                    <use href="../images/check.svg#check"></use>
                 </svg>
-              <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp    
-                   <a href="" class="link">Условия договора</a>
+                   Соглашаюсь с рассылкой и принимаю&nbsp;    
+                   <a href="" class="checkbox-link link">Условия договора</a>
               </label>
               <button type="submit" class="modal-form-btn">Отправить</button>
 
